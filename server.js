@@ -26,3 +26,21 @@ app.get("/messages", function(req, res) {
 // Setup the server
 var server = http.createServer(app)
 server.listen(3000)
+
+var WebSocketServer = require('ws').Server
+var wss = new WebSocketServer({ server: server })
+
+wss.on('connection', function(ws) {
+  ws.on('message', function(data) {
+    messageBus.emit('message', data)
+  })
+
+  var callback = function(data) {
+    ws.send(data)
+  }
+  messageBus.on('message', callback)
+
+  ws.on('close', function() {
+    messageBus.removeListener('message', callback)
+  })
+})
