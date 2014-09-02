@@ -4,7 +4,7 @@
   "description": "A real-time web engine. (Like socket.io)",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node_modules/.bin/nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
     "express": "4.x",
     "morgan": "^1.2.3",
     "ws": "^0.4.32"
+  },
+  "devDependencies": {
+    "nodemon": "^1.2.1"
   }
 }

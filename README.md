@@ -14,6 +14,12 @@ You need:
 
 ## Usage
 
+To start with auto-reloading (nodemon):
+
+    $ npm start
+
+Or without:
+
     $ node server.js
 
 Browser to http://localhost:3000/.
