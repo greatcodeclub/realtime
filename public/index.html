@@ -13,7 +13,24 @@
   </form>
 
   <script src="vendor/jquery.js"></script>
+  <script src="client.js"></script>
   <script>
+    var client = new Client()
+
+    $("#message").submit(function() {
+      var message = $("#body").val()
+
+      client.publish({ message: message })
+
+      this.reset()
+
+      return false
+    })
+
+    client.subscribe(function(data) {
+      $("#log").append($("<p>").text(data.message))
+    })
+
     $("#body").focus()
   </script>
 </body>
