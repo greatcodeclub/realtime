@@ -1,0 +1,28 @@
+# Real-time
+
+A simple real-time web engine. Think socker.io, but way simpler.
+
+A project of [The Great Code Club](http://www.greatcodeclub.com/).
+
+## Installation
+
+You need:
+
+- A recent version of [node](http://nodejs.org/).
+
+    $ npm install
+
+## Usage
+
+    $ node server.js
+
+Browser to http://localhost:3000/.
+
+Type something in the box and hit enter. Tada!
+
+## License
+
+Copyright 2014 Coded Inc.  
+marc@codedinc.com
+
+You are free to modify and distribute this however you want. Except for teaching purposes.

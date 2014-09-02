@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Real-time demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div id="log"></div>
+
+  <form id="message">
+    <input id="body" size="50">
+  </form>
+
+  <script src="vendor/jquery.js"></script>
+  <script src="client.js"></script>
+  <script>
+    var client = new Client()
+
+    client.subscribe(function(data) {
+      $("#log").append($("<p>").text(data.message))
+    })
+
+    $("#message").submit(function() {
+      var message = $("#body").val()
+      var form = this
+
+      client.send({ message: message })
+      this.reset()
+
+      return false
+    })
+
+    $("#body").focus()
+  </script>
+</body>
+</html>

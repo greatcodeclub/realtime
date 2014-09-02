@@ -1,0 +1,27 @@
+{
+  "name": "realtime",
+  "version": "0.0.0",
+  "description": "A real-time web engine. (Like socket.io)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/greatcodeclub/realtime.git"
+  },
+  "keywords": [
+    "database",
+    "btree"
+  ],
+  "author": "Marc-Andre Cournoyer",
+  "bugs": {
+    "url": "https://github.com/greatcodeclub/realtime/issues"
+  },
+  "dependencies": {
+    "body-parser": "^1.6.7",
+    "express": "4.x",
+    "morgan": "^1.2.3",
+    "ws": "^0.4.32"
+  }
+}
