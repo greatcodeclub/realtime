@@ -1,6 +1,6 @@
 # Real-time
 
-A simple real-time web engine. Think socker.io, but way simpler.
+A simple real-time web engine. Think Socket.io, but way simpler.
 
 ![Preview](https://github.com/greatcodeclub/realtime/blob/master/preview.gif)
 
