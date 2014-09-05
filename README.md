@@ -6,9 +6,7 @@ A project of [The Great Code Club](http://www.greatcodeclub.com/).
 
 ## Installation
 
-You need:
-
-- A recent version of [node](http://nodejs.org/).
+You need a recent version of [node](http://nodejs.org/).
 
     $ npm install
 
