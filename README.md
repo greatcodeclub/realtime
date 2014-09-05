@@ -2,6 +2,8 @@
 
 A simple real-time web engine. Think socker.io, but way simpler.
 
+![Preview](https://github.com/greatcodeclub/realtime/blob/master/preview.gif)
+
 A project of [The Great Code Club](http://www.greatcodeclub.com/).
 
 ## Installation
